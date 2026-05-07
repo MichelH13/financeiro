@@ -1,7 +1,12 @@
 // Supabase Configuration
 // IMPORTANTE: Substitua estas variaveis pelas suas credenciais do Supabase
-const SUPABASE_URL = 'SUA_SUPABASE_URL_AQUI';
-const SUPABASE_ANON_KEY = 'SUA_SUPABASE_ANON_KEY_AQUI';
+// Use a URL que você pegou lá no Supabase (Project URL)
+const SUPABASE_URL = 'https://ijfvqilgwtvpabbiupdn.supabase.co'; 
+
+// Use a Chave ANON (Project API Key) que fica no mesmo lugar da URL no Supabase
+const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI'; 
+
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Initialize Supabase Client
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
