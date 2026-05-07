@@ -6,7 +6,6 @@ const SUPABASE_URL = 'https://ijfvqilgwtvpabbiupdn.supabase.co';
 // Use a Chave ANON (Project API Key) que fica no mesmo lugar da URL no Supabase
 const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI'; 
 
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Initialize Supabase Client
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
