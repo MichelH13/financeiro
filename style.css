@@ -1,0 +1,94 @@
+:root {
+    --primary: #10b981;
+    --bg: #f8fafc;
+    --text: #1e293b;
+}
+
+body, html { 
+    margin: 0; padding: 0; height: 100%; 
+    font-family: -apple-system, system-ui, sans-serif;
+    background: var(--bg);
+    overflow: hidden; /* Impede scroll duplo no mobile */
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header h2 { margin: 0; color: var(--primary); font-size: 1.2rem; }
+.header p { margin: 2px 0 0; font-size: 0.8rem; color: #64748b; }
+
+.controls {
+    padding: 15px;
+    background: white;
+    z-index: 1000;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.market-entry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-add { background: #e2e8f0; color: #475569; }
+.btn-calc { background: var(--primary); color: white; }
+
+#map {
+    flex-grow: 1; /* O mapa ocupa o resto da tela */
+    width: 100%;
+}
+
+.result-bar {
+    background: #ecfdf5;
+    border-top: 3px solid var(--primary);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.result-bar strong { color: #059669; }
